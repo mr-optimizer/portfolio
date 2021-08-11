@@ -1,0 +1,62 @@
+.btn-primary{
+    &,
+    &:link,
+    &:visited{
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        border-radius: 10rem;
+        font-family: $font-nav-btn;
+        font-weight: 700;
+        color: #fff;
+        background-image: linear-gradient(to bottom, rgba($color-primary-light,0.4 ), rgba($color-primary,1));
+        transition: all .2s;
+    }
+    &::after{
+        content: "";
+        width: 40%;
+        position: absolute;
+        top: 3rem;
+        left: 30%;
+        box-shadow: 0rem 1rem 2.5rem 2rem  rgba($color-primary-light,0.4 );
+        transition: all 0.2s;
+       
+    }
+    &:active {
+        transform: translateY(.7rem);
+        &::after{
+            box-shadow: 0rem 0.5rem 1.5rem 1.2rem  rgba($color-primary-light,0.4 );
+
+        }
+    }
+
+}
+
+.btn-secondary {
+    &--light{
+        &,
+        &:link,
+        &:visited{
+        cursor: pointer;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1rem;
+        padding: 0.7rem 1.3rem;
+        color: #2f68ec;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0.1rem 0.12rem   rgba(0,0,0,0.5);
+        transition: all 0.2s;
+    }
+    &:active {
+        transform: translateY(.1rem);
+        box-shadow: 0rem 0rem   rgba(0,0,0,0.5);
+        }
+    }
+}
