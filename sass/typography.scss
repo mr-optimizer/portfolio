@@ -1,11 +1,17 @@
 .heading-primary{
     &--dark{
         font-size: 4.5rem;  
-        font-family: $font-nav-btn;      
+        font-family: $font-nav-btn;     
+        @media screen and (max-width:$bp-medium) {
+            font-size: 3rem;
+        } 
     }
     &--light{
         font-size: 4.5rem;
         color: $color-primary;
+        @media screen and (max-width:$bp-medium) {
+            font-size: 3.5rem;
+        } 
     }
 
 }
@@ -16,14 +22,5 @@
     font-weight: 500;
     &--dark {
         color: $color-primary;
-    }
-}
-.icon {
-    transition: all 0.2s;
-    // background-color: $color-primary;
-    &:hover {
-        color: $color-primary;
-        transform: translateY(-0.15rem);
-        transform: scale(1.2);
     }
 }

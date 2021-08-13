@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@300;500;600;700&family=Montez&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2a304908b0.js" crossorigin="anonymous"></script>
 </head>
 <header class="header">
-    <div class="nav">
-        <div class="nav_brand-name">Shubham &nbsp; Kumar</div>
+    <nav class="nav">
+        <div class="nav_brand-name">Shubham &nbsp; <span class="nav_brand-name-title">Kumar</div>
         <div class="nav_items">
             <a href="#" class="nav_link">home</a>
             <a href="#about" class="nav_link">about</a>
@@ -20,7 +20,7 @@
             <a href="#" class="nav_link">projects</a>
             <a href="#footer" class="nav_link">contact</a>
         </div>
-    </div>
+    </nav>
 </header>  
 <body>
     <section class="section_home">
@@ -29,12 +29,12 @@
                 <h1 class="heading-primary--dark u-margin-top-huge u-margin-bottom-small">Hey! I am</h1>
                 <h1 class="heading-primary--light u-margin-bottom-medium">Shubham Kumar</h1>
                 <p class="home_text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing delectus quod  placeat raue. sapiente temporibus dolor corporis accusantium quaerat ratione vero consequuntur, delectus neque cupiditate, id repellat. Amet.
+                    Lorem ipsum dolor, sit adipisicing delectus placeat raue. sapiente temporibus dolor corporis accusantium quaerat ratione vero consequuntur, delectus neque cupiditate, id repellat.
                 </p>
                 <button class="btn-primary u-margin-top-big" type="submit">hire me</button>
             </div>
             <div class="home_svg">
-                <svg width="500" height="450" viewBox="0 0 650 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="home_svg--1" width="500" height="450" viewBox="0 0 650 650" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="undraw_feeling_proud_qne1 1" clip-path="url(#clip0)">
                     <g id="Table">
                     <path id="Vector" d="M178.097 368.849V548.407L149.815 597.355L147.663 601.078H36.0705L33.8157 368.849H178.097Z" fill="#E6E6E6"/>
@@ -107,11 +107,11 @@
                     <rect width="650" height="650" fill="white" transform="matrix(-1 0 0 1 650 0)"/>
                     </clipPath>
                     </defs>
-                    </svg>
+                </svg>
             </div>
         </div>
     </section>
-    
+
 
     <section class="section_about" id="about">
         <div class="about">
@@ -122,26 +122,28 @@
                 <p class="about_text">Lorem, ipsum dolor sit amet consectetur ratione repellat quisquam quam, tempore, facere optio error veniam?</p>
                 <button class="btn-primary u-margin-top-big" type="submit">download cv</button>
             </div>
-            <div class="about_card--1">
-                <img src="img/png/disigner.png" alt="Designer" class="about_card_icon">
-                <div class="about_card--1_heading">Designre</div>
-                <p class="about_card--1_text">Lorem ipsum dolor sit amet consectetur swastik chutiya haramzada adipisicing elit. Nostrum, doloribus.</p>
-                <button class="btn-secondary--light u-margin-top-medium">Learn More</button>
+            <div class="card">
+                <div class="about_card--1">
+                    <img src="img/png/disigner.png" alt="Designer" class="about_card_icon">
+                    <div class="about_card--1_heading">Designre</div>
+                    <p class="about_card--1_text">Lorem ipsum dolor sit amet consectetur swastik chutiya haramzada adipisicing elit. Nostrum, doloribus.</p>
+                    <button class="btn-secondary--light u-margin-top-medium">Learn More</button>
+                </div>
+                <div class="about_card--2">
+                    <img src="img/png/devepoper.png" alt="Developer" class="about_card_icon">
+                    <div class="about_card--2_heading">Developer</div>
+                    <p class="about_card--2_text">Lorem ipsum dolor sit amet consectetur swastik chutiya haramzada adipisicing elit. Nostrum, doloribus.</p>
+                    <button class="btn-secondary--light u-margin-top-medium">Learn More</button>
+                </div>
+                <div class="about_card--3">
+                    <img src="img/png/project_management.png" alt="Project management" class="about_card_icon">
+                    <span class="about_card--3_heading">Project Management</span>
+                    <p class="about_card--3_text">Lorem ipsum dolor sit amet consectetur swastik chutiya haramzada adipisicing elit. Nostrum, doloribus.</p>
+                    <button class="btn-secondary--light u-margin-top-medium">Learn More</button>
+                </div>
             </div>
-            <div class="about_card--2">
-                <img src="img/png/devepoper.png" alt="Developer" class="about_card_icon">
-                <div class="about_card--2_heading">Developer</div>
-                <p class="about_card--2_text">Lorem ipsum dolor sit amet consectetur swastik chutiya haramzada adipisicing elit. Nostrum, doloribus.</p>
-                <button class="btn-secondary--light u-margin-top-medium">Learn More</button>
             </div>
-            <div class="about_card--3">
-                <img src="img/png/project_management.png" alt="Project management" class="about_card_icon">
-                <span class="about_card--3_heading">Project Management</span>
-                <p class="about_card--3_text">Lorem ipsum dolor sit amet consectetur swastik chutiya haramzada adipisicing elit. Nostrum, doloribus.</p>
-                <button class="btn-secondary--light u-margin-top-medium">Learn More</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
 <section class="section_skill" id="skill">
@@ -153,7 +155,7 @@
             <button class="btn-primary u-margin-top-big" type="submit">download cv</button>
         </div>
         <div class="skill_svg">
-            <svg width="465" height="465" viewBox="0 0 665 665" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="skill_svg--1" width="465" height="465" viewBox="0 0 665 665" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="svg-skill">
                 <circle id="Ellipse 16" cx="420" cy="210" r="200" fill="#354A7B"/>
                 <circle id="Ellipse 15" cx="398" cy="397" r="250" fill="#FFC700"/>
@@ -252,13 +254,13 @@
         <span class="heading-secondary--dark">Extend</span> our Bond
     </h3>
     <div class="social_media">
-        <a href="" class="social_media_link"><i class="fab icon fa-4x fa-facebook"></i></a>
-        <a href="" class="social_media_link"><i class="fab icon fa-4x fa-linkedin"></i></a>
-        <a href="" class="social_media_link"><i class="fab icon fa-4x fa-instagram"></i></a>
-        <a href="" class="social_media_link"><i class="far icon fa-4x fa-envelope"></i></a>
-        <a href="" class="social_media_link"><i class="fab icon fa-4x fa-twitter"></i></a>
-        <a href="" class="social_media_link"><i class="fab icon fa-4x fa-github"></i></a>
-        
+        <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg> -->
+        <a href="" class="social_media_link"><img src="img/png/facebook.png" alt="" class="icon"></a>
+        <a href="" class="social_media_link"><img src="img/png/linkedin.png" alt="" class="icon"></a>
+        <a href="" class="social_media_link"><img src="img/png/instagram.png" alt="" class="icon"></a>
+        <a href="" class="social_media_link"><img src="img/png/gmail.png" alt="" class="icon"></a>
+        <a href="" class="social_media_link"><img src="img/png/twitter.png" alt="" class="icon"></a>
+        <a href="" class="social_media_link"><img style="scale: 1.4;" src="img/png/github.png" alt="" class="icon"></a>
     </div>
     <div class="copyright">Shubham Kumar, &#169;: 2021-2022</div>
 </footer>

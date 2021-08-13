@@ -7,23 +7,29 @@
 }
 body{
     box-sizing: border-box;
-    // padding: 2rem;
     background-color: $base-color;
 }
 
 html{
-    background-color: aqua;
-    // margin: -1rem;
     padding: 0;
     font-size: 62.5%;
     overflow-x:hidden;
-
-}
-@media screen and (mex-width:900px) {
-    html{
+    @media screen and (max-width:$bp-small) {
+        font-size: 45%;
+    }
+    @media screen and (max-width:$bp-medium) {
         font-size: 50%;
     }
+    @media screen and (max-width:$bp-large) {
+        font-size: 53%;
+    }
+    @media screen and (max-width:$bp-largest) {
+        font-size: 55%;
+    }
+
+
 }
+
 ::selection{
     background-color: $color-primary;
     color: $base-color;

@@ -9,6 +9,10 @@
         text-decoration: none;
         text-transform: uppercase;
         padding: 1rem 2rem;
+        @media screen and (max-width:$bp-medium) {
+            padding: .7rem 1rem;
+            font-size: 1rem;
+        }
         border-radius: 10rem;
         font-family: $font-nav-btn;
         font-weight: 700;
