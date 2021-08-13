@@ -30,7 +30,6 @@
         transform: translateY(.7rem);
         &::after{
             box-shadow: 0rem 0.5rem 1.5rem 1.2rem  rgba($color-primary-light,0.4 );
-
         }
     }
 
@@ -55,6 +54,7 @@
         transition: all 0.2s;
     }
     &:active {
+        color: #000;
         transform: translateY(.1rem);
         box-shadow: 0rem 0rem   rgba(0,0,0,0.5);
         }

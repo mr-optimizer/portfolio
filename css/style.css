@@ -8,11 +8,17 @@
 
 body {
   box-sizing: border-box;
-  padding: 2.5rem;
   background-color: #fbfbfb; }
 
 html {
-  font-size: 62.5%; }
+  background-color: aqua;
+  padding: 0;
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
+@media screen and (mex-width: 900px) {
+  html {
+    font-size: 50%; } }
 
 ::selection {
   background-color: #fdbb04;
@@ -83,6 +89,7 @@ html {
   transition: all 0.2s; }
 
 .btn-secondary--light:active {
+  color: #000;
   transform: translateY(0.1rem);
   box-shadow: 0rem 0rem rgba(0, 0, 0, 0.5); }
 
@@ -94,16 +101,38 @@ html {
   font-size: 4.5rem;
   color: #fdbb04; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  font-family: "Noto Sans JP";
+  font-weight: 500; }
+  .heading-secondary--dark {
+    color: #fdbb04; }
+
+.icon {
+  transition: all 0.2s; }
+  .icon:hover {
+    color: #fdbb04;
+    transform: translateY(-0.15rem);
+    transform: scale(1.2); }
+
+.header {
+  position: fixed;
+  z-index: 1000; }
+
 .nav {
-  padding: 0 3rem;
+  padding: 0 3rem 0 3rem;
   display: flex;
+  width: 99vw;
+  height: 10vh;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  background-color: #fbfbfb; }
   .nav_items {
     display: flex;
     justify-content: center;
     gap: 3rem; }
   .nav_brand-name {
+    margin-left: 4rem;
     font-family: "Montez";
     color: #333;
     font-size: 3.5rem;
@@ -118,8 +147,7 @@ html {
       color: #fdbb04; }
 
 .section_home {
-  padding: 3rem;
-  margin: 1rem; }
+  padding: 7rem; }
 
 .home {
   padding: 2rem 3rem;
@@ -131,7 +159,8 @@ html {
 
 .section_about {
   padding: 3rem;
-  margin: 3rem auto; }
+  margin: 3rem auto;
+  height: 80rem; }
 
 .about {
   position: relative;
@@ -216,3 +245,36 @@ html {
       font-weight: 300;
       text-align: center;
       hyphens: auto; }
+
+.section_skill {
+  padding: 2rem 7rem 7rem 7rem; }
+
+.skill {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-items: right; }
+  .skill_text {
+    font-size: 1.6rem; }
+
+.footer {
+  margin: 0 -2.5rem -2.5rem -2.5rem;
+  padding: 3rem;
+  background-color: #354a7b;
+  color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; }
+
+.social_media {
+  display: flex;
+  gap: 5rem; }
+  .social_media_link {
+    color: #fbfbfb; }
+
+.copyright {
+  font-size: 1.7rem;
+  font-family: 'lato';
+  font-style: italic; }
