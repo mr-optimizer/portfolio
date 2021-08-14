@@ -36,7 +36,7 @@ contactBtn.addEventListener('click',()=>{
 });
 // section Home
 hireBtn.addEventListener('click',()=>{
-    window.open('http://wa.me/8651484067');
+    window.open('http://wa.me/918651484067');
 })
 //section About
 resumrBtn.addEventListener('click',()=>{
