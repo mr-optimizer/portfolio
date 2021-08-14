@@ -28,6 +28,9 @@
         left: 30%;
         box-shadow: 0rem 1rem 2.5rem 2rem  rgba($color-primary-light,0.4 );
         transition: all 0.2s;
+        @media screen and (max-width:$bp-medium) {
+            box-shadow: 0rem 1rem 1.5rem 1rem  rgba($color-primary-light,0.4 );
+         }
        
     }
     &:active {

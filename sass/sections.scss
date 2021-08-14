@@ -23,7 +23,6 @@
         @media screen and (max-width:$bp-small) {
            gap: 1.5rem;
            align-items: center;
-        //    margin-bottom: 0.3rem;
         }
     }
    
@@ -55,9 +54,10 @@
         font-family: $font-nav-btn;
         font-weight: 700;
         text-decoration: none;
-        &:not(:first-child){
-            color: $color-primary;
-        }
+        // &:not(:first-child){
+        //     color: $color-primary;
+        // }
+        color: $color-primary;
     }
 }
 
