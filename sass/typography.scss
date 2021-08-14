@@ -5,6 +5,9 @@
         @media screen and (max-width:$bp-medium) {
             font-size: 3rem;
         } 
+        // @media screen and (max-width:$bp-small) {
+        //     display: block;
+        // }
     }
     &--light{
         font-size: 4.5rem;
@@ -23,4 +26,7 @@
     &--dark {
         color: $color-primary;
     }
+    @media screen and (max-width:$bp-small) {
+       font-size: 3rem;
+     }
 }
