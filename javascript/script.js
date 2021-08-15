@@ -1,5 +1,6 @@
 'use strict';
 
+
 //nav-bar
 const switchColor=function(e){
 
