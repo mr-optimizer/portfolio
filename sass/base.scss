@@ -31,19 +31,19 @@ body::-webkit-scrollbar-thumb {
   overflow-x: hidden;
   scroll-behavior: smooth;
   @media screen and (max-width: $bp-largest) {
-    font-size: 65%;
+    font-size: 70%;
   }
   @media screen and (max-width: $bp-large) {
-    font-size: 60%;
+    font-size: 65%;
   }
   @media screen and (max-width: $bp-medium) {
-    font-size: 55%;
+    font-size: 60%;
   }
   @media screen and (max-width: $bp-small) {
-    font-size: 50%;
+    font-size: 55%;
   }
   @media screen and (max-width:$bp-smallest) {
-    font-size: 45%;
+    font-size: 50%;
 }
 }
 
