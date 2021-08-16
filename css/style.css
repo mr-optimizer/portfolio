@@ -482,12 +482,12 @@ html {
 
 .navigation__button {
   background-color: #fbfbfb;
-  height: 5.5rem;
-  width: 5.5rem;
+  height: 5rem;
+  width: 5rem;
   align-items: center;
   position: fixed;
   top: 48rem;
-  right: 4.5rem;
+  right: 4rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
@@ -498,5 +498,5 @@ html {
       font-size: 50%; } }
 
 .night_mode_icon {
-  height: 5.5rem;
-  width: 5.5rem; }
+  height: 5rem;
+  width: 5rem; }
