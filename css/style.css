@@ -495,7 +495,8 @@ html {
   cursor: pointer; }
   @media screen and (max-width: 56.25em) {
     .navigation__button {
-      font-size: 50%; } }
+      font-size: 50%;
+      right: 2.5rem; } }
 
 .night_mode_icon {
   height: 5rem;
