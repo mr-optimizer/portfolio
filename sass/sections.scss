@@ -3,7 +3,6 @@
     z-index: 1000;
 }
 .nav{
-    // margin-top: 1rem;
     padding: 0 3rem 0 3rem;
     display: flex;
     @media screen and (max-width:$bp-small) {
@@ -11,11 +10,14 @@
         justify-content: center;
         height: 10vh;
     }
+
     width: 99vw;
     height: 7vh;
     justify-content: space-between;
     align-items: center;
     background-color: $base-color;
+    // background-color: $color-tertiary;
+
     &_items {
         display: flex;
         justify-content: center;
@@ -23,6 +25,9 @@
         @media screen and (max-width:$bp-small) {
            gap: 1.5rem;
            align-items: center;
+        }
+        @media screen and (max-width:$bp-smallest) {
+            gap: 0.8rem;
         }
     }
    
@@ -36,7 +41,7 @@
             margin-top: 0.3rem;
          } 
         font-family: $font-brand;
-        color: $color-tertiary;
+        // color: $color-tertiary;
         font-size: 3.5rem;
         font-weight: 700;
         &-title {
@@ -67,6 +72,7 @@
     @media screen and (max-width:$bp-medium) {
         padding: 3rem;
     }
+
 }
 .home{
     padding: 2rem 3rem;
@@ -113,6 +119,9 @@
     @media screen and (max-width:$bp-small) {
         height: 120rem;
     }
+    @media screen and (max-width:$bp-smallest) {
+        height: 135rem;
+    }
 }
 .about{
     position: relative;
@@ -153,6 +162,7 @@
             justify-content: center;
             align-items: center;
         }
+        color: $color-tertiary;
 
     }
     &_card--1 {
