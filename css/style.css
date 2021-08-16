@@ -37,13 +37,13 @@ html {
       font-size: 65%; } }
   @media screen and (max-width: 56.25em) {
     html {
-      font-size: 60%; } }
+      font-size: 62%; } }
   @media screen and (max-width: 39.5em) {
     html {
-      font-size: 55%; } }
+      font-size: 57%; } }
   @media screen and (max-width: 31.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 55%; } }
 
 ::selection {
   background-color: #fdbb04;
