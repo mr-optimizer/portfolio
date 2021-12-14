@@ -1,22 +1,22 @@
 $base-color: rgb(251, 251, 251);
 
-$color-primary:#fdbb04;
-$color-primary-light:#ffd000;
+$color-primary: #fdbb04;
+$color-primary-light: #ffd000;
 $color-secondary: #354a7b;
 $color-tertiary: #333;
 $card-color: #eeeeee;
-$color-white :white;
+$color-white: white;
 $color-black: black;
 
 $default-font-size: 1.6rem;
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
-$font-para: 'Alegreya Sans';
-$font-brand: 'Montez';
-$font-nav-btn: 'Noto Sans JP';
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap");
+$font-para: "Alegreya Sans";
+$font-brand: "Montez";
+$font-nav-btn: "Noto Sans JP";
 
-$bp-largest: 68.75em;     
-$bp-large: 62.5em;    
-$bp-medium: 56.25em; 
+$bp-largest: 68.75em;
+$bp-large: 62.5em;
+$bp-medium: 56.25em;
 $bp-small: 39.5em;
 $bp-smallest: 31.25em;

@@ -14,6 +14,13 @@ const projectsBtn = document.querySelector('#projects');
 const contactBtn = document.querySelector('#contact');
 //home Section
 const hireBtn = document.getElementById('hire');
+// Platform Section
+const leetcode_color = document.getElementById('leetcode_path');
+const hacker_rank_btn = document.getElementById('hacker_rank_btn');
+const gfg_btn = document.getElementById('gfg_btn');
+const leetcode_btn = document.getElementById('leetcode_btn');
+const codeforces_btn = document.getElementById('codeforces_btn');
+const codechef_btn = document.getElementById('codechef_btn');
 //about section
 const resumrBtn = document.getElementById('resume');
 //about_section
