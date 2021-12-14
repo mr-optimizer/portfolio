@@ -1,4 +1,55 @@
 "use strict";
+// Title tab
+window.onload = function () {
+  let pageTitle = document.title;
+  let attentionMessage = "Come Back 🙏🙏";
+  let blinkEvent = null;
+
+  document.addEventListener("visibilitychange", function (e) {
+    let isPageActive = !document.hidden;
+
+    if (!isPageActive) {
+      blink();
+    } else {
+      document.title = pageTitle;
+      clearInterval(blinkEvent);
+    }
+  });
+
+  function blink() {
+    blinkEvent = setInterval(function () {
+      if (document.title === attentionMessage) {
+        document.title = pageTitle;
+      } else {
+        document.title = attentionMessage;
+      }
+    }, 1000);
+  }
+};
+
+// fade in
+let opacity = 0;
+let intervalID = 0;
+let change_title = window.onload;
+window.onload = function () {
+  fadeIn();
+  if (change_title) {
+    change_title();
+  }
+};
+function fadeIn() {
+  setInterval(show, 110);
+}
+function show() {
+  var body = document.getElementById("body");
+  opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity"));
+  if (opacity < 1) {
+    opacity = opacity + 0.1;
+    body.style.opacity = opacity;
+  } else {
+    clearInterval(intervalID);
+  }
+}
 
 //night mode
 const dayTheme = function () {

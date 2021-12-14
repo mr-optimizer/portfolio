@@ -14,15 +14,15 @@ body {
   position: absolute; }
 
 body::-webkit-scrollbar {
-  width: 1.5em; }
+  width: 1.2em; }
 
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8); }
 
 body::-webkit-scrollbar-thumb {
   background-color: #fdbb04;
-  outline: 5px solid #fdbb04;
-  border-radius: 20%; }
+  outline: 1px solid #fdbb04;
+  border-radius: 15%; }
 
 html {
   padding: 0;
@@ -248,18 +248,18 @@ html {
 .section_about {
   padding: 3rem;
   margin: 3rem auto;
-  height: 80rem; }
+  height: 90rem; }
   @media screen and (max-width: 56.25em) {
     .section_about {
       padding: 0rem;
       margin: 3rem 0;
-      height: 65rem; } }
+      height: 75rem; } }
   @media screen and (max-width: 39.5em) {
     .section_about {
-      height: 120rem; } }
+      height: 135rem; } }
   @media screen and (max-width: 31.25em) {
     .section_about {
-      height: 135rem; } }
+      height: 150rem; } }
 
 .about {
   position: relative;
@@ -303,7 +303,7 @@ html {
     position: absolute;
     top: 5rem;
     left: 60%;
-    width: 20%;
+    width: 16%;
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -337,7 +337,7 @@ html {
     position: absolute;
     top: 35rem;
     left: 25%;
-    width: 20%;
+    width: 16%;
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -369,9 +369,9 @@ html {
       hyphens: auto; }
   .about_card--3 {
     position: absolute;
-    top: 38rem;
-    left: 53%;
-    width: 20%;
+    top: 48rem;
+    left: 50%;
+    width: 16%;
     padding: 2.5rem;
     display: flex;
     flex-direction: column;

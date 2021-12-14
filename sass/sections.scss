@@ -112,17 +112,17 @@
 .section_about {
   padding: 3rem;
   margin: 3rem auto;
-  height: 80rem;
+  height: 90rem;
   @media screen and (max-width: $bp-medium) {
     padding: 0rem;
     margin: 3rem 0;
-    height: 65rem;
+    height: 75rem;
   }
   @media screen and (max-width: $bp-small) {
-    height: 120rem;
+    height: 135rem;
   }
   @media screen and (max-width: $bp-smallest) {
-    height: 135rem;
+    height: 150rem;
   }
 }
 .about {
@@ -170,7 +170,7 @@
     position: absolute;
     top: 5rem;
     left: 60%;
-    width: 20%;
+    width: 16%;
     @media screen and (max-width: $bp-large) {
       width: 25%;
     }
@@ -208,7 +208,7 @@
     position: absolute;
     top: 35rem;
     left: 25%;
-    width: 20%;
+    width: 16%;
     @media screen and (max-width: $bp-large) {
       width: 25%;
     }
@@ -244,9 +244,9 @@
   }
   &_card--3 {
     position: absolute;
-    top: 38rem;
-    left: 53%;
-    width: 20%;
+    top: 48rem;
+    left: 50%;
+    width: 16%;
     @media screen and (max-width: $bp-large) {
       width: 25%;
       left: 55%;
