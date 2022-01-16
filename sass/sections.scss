@@ -375,6 +375,7 @@
     }
     &__btn {
       font-size: 1.6rem;
+      cursor: pointer;
       text-transform: capitalize;
       background-color: rgba(44, 43, 43, 0.705);
       color: $color-primary;
@@ -385,12 +386,13 @@
       letter-spacing: 0.2rem;
       &:hover {
         background-color: $color-primary;
+        content: "View";
         color: white;
       }
     }
   }
   &-1 {
-    background-image: url("/img/natrus.png");
+    background-image: url("../img/natrus.png");
     background-size: cover;
     transition: all 0.2s;
     &:hover {
@@ -400,7 +402,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   }
   &-2 {
-    background-image: url("/img/mapty.png");
+    background-image: url("../img/mapty.png");
     background-size: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     transition: all 0.2s;
@@ -410,7 +412,7 @@
     }
   }
   &-3 {
-    background-image: url("/img/bankist.png");
+    background-image: url("../img/bankist.png");
     background-size: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     transition: all 0.2s;

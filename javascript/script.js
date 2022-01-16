@@ -151,13 +151,13 @@ projectManagerBtn.addEventListener("click", () => {
 });
 
 
-// section Project
-natrousBtn.addEventListener('click', ()=> {
-  window.open("../projects/natrous.html");
-});
-maptyBtn.addEventListener('click', () => {
-  window.open("../projects/mapty/index.html");
-});
-bankistBtn.addEventListener('click', ()=>{
-  window.open("../projects/bankist/index.html");
-})
+// // section Project
+// natrousBtn.addEventListener('click', ()=> {
+//   window.open("../projects/natrous.html");
+// });
+// maptyBtn.addEventListener('click', () => {
+//   window.open("../projects/mapty/index.html");
+// });
+// bankistBtn.addEventListener('click', ()=>{
+//   window.open("../projects/bankist/index.html");
+// })
