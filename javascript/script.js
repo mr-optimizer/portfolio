@@ -87,15 +87,15 @@ const switchColor = function (e) {
     ele.style.color = "#fdbb04";
   });
   if (e === "h") {
-    homeBtn.style.color = "blue";
+    homeBtn.style.color = "gray";
   } else if (e == "a") {
-    aboutBtn.style.color = "blue";
+    aboutBtn.style.color = "gray";
   } else if (e == "s") {
-    skillsBtn.style.color = "blue";
+    skillsBtn.style.color = "gray";
   } else if (e == "p") {
-    projectsBtn.style.color = "blue";
+    projectsBtn.style.color = "gray";
   } else if (e == "c") {
-    contactBtn.style.color = "blue";
+    contactBtn.style.color = "gray";
   }
 };
 homeBtn.addEventListener("click", () => {
@@ -149,3 +149,15 @@ developerBtn.addEventListener("click", () => {
 projectManagerBtn.addEventListener("click", () => {
   window.open("https://en.wikipedia.org/wiki/Project_manager");
 });
+
+
+// section Project
+natrousBtn.addEventListener('click', ()=> {
+  window.open("../projects/natrous.html");
+});
+maptyBtn.addEventListener('click', () => {
+  window.open("../projects/mapty/index.html");
+});
+bankistBtn.addEventListener('click', ()=>{
+  window.open("../projects/bankist/index.html");
+})

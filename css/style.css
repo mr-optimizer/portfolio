@@ -443,9 +443,81 @@ html {
         height: 30rem;
         width: 30rem; } }
 
+.section_project {
+  padding: 2rem 7rem 7rem 7rem; }
+  @media screen and (max-width: 56.25em) {
+    .section_project {
+      padding: 2rem 4rem 4rem 4rem; } }
+
+.card {
+  height: 40rem;
+  width: 35rem;
+  overflow: hidden; }
+  .card__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    justify-content: center; }
+  .card__bottom {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    height: 11rem;
+    margin-top: 29rem;
+    padding: 1.2rem; }
+    .card__bottom__heading {
+      font-size: 2.3rem;
+      text-align: center;
+      color: white; }
+      .card__bottom__heading__light {
+        color: #fdbb04; }
+    .card__bottom__container {
+      padding: 1rem;
+      display: flex;
+      align-items: center; }
+    .card__bottom__text {
+      color: white;
+      font-size: 1.5rem; }
+    .card__bottom__btn {
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      background-color: rgba(44, 43, 43, 0.705);
+      color: #fdbb04;
+      outline: solid #fbfbfb 1.5px;
+      border-radius: 4px;
+      border: none;
+      padding: 0.7rem 3rem;
+      letter-spacing: 0.2rem; }
+      .card__bottom__btn:hover {
+        background-color: #fdbb04;
+        color: white; }
+  .card-1 {
+    background-image: url("/img/natrus.png");
+    background-size: cover;
+    transition: all 0.2s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    .card-1:hover {
+      transform: scale(1.1);
+      box-shadow: 0 1px 3rem rgba(0, 0, 0, 0.1), 0 1px 3rem rgba(0, 0, 0, 0.2); }
+  .card-2 {
+    background-image: url("/img/mapty.png");
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.2s; }
+    .card-2:hover {
+      transform: scale(1.1);
+      box-shadow: 0 1px 3rem rgba(0, 0, 0, 0.1), 0 1px 3rem rgba(0, 0, 0, 0.2); }
+  .card-3 {
+    background-image: url("/img/bankist.png");
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.2s; }
+    .card-3:hover {
+      transform: scale(1.1);
+      box-shadow: 0 1px 3rem rgba(0, 0, 0, 0.1), 0 1px 3rem rgba(0, 0, 0, 0.2); }
+
 .platform {
   padding: 5rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  margin-top: 15rem; }
   .platform_container {
     display: flex;
     flex-wrap: wrap;

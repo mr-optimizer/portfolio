@@ -14,6 +14,10 @@ const projectsBtn = document.querySelector('#projects');
 const contactBtn = document.querySelector('#contact');
 //home Section
 const hireBtn = document.getElementById('hire');
+// Project section
+const natrousBtn = document.getElementById('natrous');
+const maptyBtn = document.getElementById('mapty');
+const bankistBtn = document.getElementById('bankist');
 // Platform Section
 const leetcode_color = document.getElementById('leetcode_path');
 const hacker_rank_btn = document.getElementById('hacker_rank_btn');
