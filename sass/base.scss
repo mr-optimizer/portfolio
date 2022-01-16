@@ -7,13 +7,14 @@
 }
 body {
   box-sizing: border-box;
+  
 }
 .temp {
   z-index: -1;
   position: absolute;
 }
 body::-webkit-scrollbar {
-  width: 1.2em;
+  width: .2em;
 }
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
@@ -30,6 +31,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  // background: #123;
   @media screen and (max-width: $bp-largest) {
     font-size: 70%;
   }
@@ -58,3 +60,85 @@ a::before{
   color: $color-primary;
   text-decoration: none;
 }
+
+
+
+
+@mixin dots($count) {
+  $text-shadow: ();
+  @for $i from 0 through $count {
+    $text-shadow: $text-shadow,
+                 (-.5+(random()) * 3) + em
+                 (-.5+(random()) * 3) + em
+                 7px
+                 hsla(random() * 360, 100%, 50%,.9);
+  }
+  text-shadow: $text-shadow;
+}
+
+// // html {
+// //   background: #123;
+// // }
+
+// body, head {
+//   font-size: 52px;
+//   color: transparent;
+// }
+// head::before, head::after,
+// body::before, body::after {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   width: 3em;
+//   height: 3em;
+//   content: '.';
+//   mix-blend-mode: screen;
+//   animation: 44s -27s move infinite ease-in-out alternate;
+// }
+
+
+// body::before {
+//   @include dots(40);
+//   animation-duration: 44s;
+//   animation-delay: -27s;
+// }
+
+// body::after {
+//   @include dots(40);
+//   animation-duration: 43s;
+//   animation-delay: -32s;
+// }
+
+// head::before {
+//   @include dots(40);
+//   animation-duration: 42s;
+//   animation-delay: -23s;
+// }
+
+// head::after {
+//   @include dots(40);
+//   animation-duration: 41s;
+//   animation-delay: -19s;
+// }
+// .ball {
+//   position: absolute;
+//   border-radius: 100%;
+//   opacity: 0.7;
+// }
+body {
+  // background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+// @keyframes move {
+//   from {
+//     transform: rotate(0deg) scale(12) translateX(-20px);
+//   }
+//   to {
+//     transform: rotate(360deg) scale(18) translateX(20px);
+//   }
+// }
