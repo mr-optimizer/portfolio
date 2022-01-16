@@ -335,12 +335,13 @@
   }
   // text-align: center;
 }
-
-.card {
+.p_card {
   height: 40rem;
   width: 35rem;
   overflow: hidden;
+}
 
+.card {
   &__container {
     display: flex;
     flex-wrap: wrap;
