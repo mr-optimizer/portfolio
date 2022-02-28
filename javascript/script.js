@@ -125,7 +125,7 @@ gfg_btn.addEventListener("click", () => {
   window.open("https://auth.geeksforgeeks.org/user/sktovisit/practice/");
 });
 leetcode_btn.addEventListener("click", () => {
-  window.open("https://leetcode.com/SK_5802/");
+  window.open("https://leetcode.com/S_K_THE_OPTIMIZER/");
 });
 codeforces_btn.addEventListener("click", () => {
   window.open("https://codeforces.com/profile/sk_the_optimizer");
