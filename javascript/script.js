@@ -641,7 +641,12 @@ projectManagerBtn.addEventListener("click", () => {
 
   // export
   return Factory
-})
+});
+
+// for counting visitors
+function websiteVisits(response) {
+  document.querySelector("#visits").textContent = response.value;
+}
 
 new Ribbons({
   colorSaturation: '60%',
