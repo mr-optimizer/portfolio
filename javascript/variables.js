@@ -14,6 +14,8 @@ const projectsBtn = document.querySelector('#projects');
 const contactBtn = document.querySelector('#contact');
 //home Section
 const hireBtn = document.getElementById('hire');
+// eduction section
+const marksIcon = document.querySelectorAll('.marks__icon__circle__inner')
 // Project section
 const natrousBtn = document.getElementById('natrous');
 const maptyBtn = document.getElementById('mapty');
