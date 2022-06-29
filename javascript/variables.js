@@ -17,9 +17,9 @@ const hireBtn = document.getElementById('hire');
 // eduction section
 const marksIcon = document.querySelectorAll('.marks__icon__circle__inner')
 // Project section
-const natrousBtn = document.getElementById('natrous');
-const maptyBtn = document.getElementById('mapty');
-const bankistBtn = document.getElementById('bankist');
+// const natrousBtn = document.getElementById('natrous');
+// const maptyBtn = document.getElementById('mapty');
+// const bankistBtn = document.getElementById('bankist');
 // Platform Section
 const leetcode_color = document.getElementById('leetcode_path');
 const hacker_rank_btn = document.getElementById('hacker_rank_btn');

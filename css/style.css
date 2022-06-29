@@ -21,7 +21,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #fdbb04;
-  outline: 1px solid #fdbb04;
+  outline: 10px solid #fdbb04;
   border-radius: 15%; }
 
 html {
@@ -186,7 +186,7 @@ body {
     .nav {
       flex-direction: column;
       justify-content: center;
-      height: 15vh; } }
+      height: 11vh; } }
   .nav_items {
     display: flex;
     justify-content: center;
@@ -258,19 +258,7 @@ body {
       width: 30rem; } }
 
 .section_about {
-  padding: 3rem;
-  margin: 5rem auto; }
-  @media screen and (max-width: 56.25em) {
-    .section_about {
-      padding: 0rem;
-      margin: 3rem 0;
-      height: 75rem; } }
-  @media screen and (max-width: 39.5em) {
-    .section_about {
-      height: 135rem; } }
-  @media screen and (max-width: 31.25em) {
-    .section_about {
-      height: 150rem; } }
+  padding: 3rem; }
 
 .edu__container__heading {
   padding-left: 5rem; }
@@ -332,22 +320,30 @@ body {
     background: conic-gradient(#fdbb04 79.4%, white 0%); }
 
 .section_skill {
-  padding: 2rem 7rem 7rem 7rem; }
+  margin-top: 7rem;
+  padding: 5rem; }
   @media screen and (max-width: 56.25em) {
     .section_skill {
-      padding: 2rem 4rem 4rem 4rem; } }
+      padding: 2rem;
+      margin-top: 1rem; } }
 
 .skill {
-  padding: 2rem;
   display: flex;
-  align-items: center;
-  justify-items: right;
-  flex-direction: row;
-  gap: 12rem; }
-  @media screen and (max-width: 39.5em) {
-    .skill {
-      flex-direction: column;
-      padding: 3rem; } }
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5rem; }
+  .skill_content {
+    width: 60%; }
+    @media screen and (max-width: 56.25em) {
+      .skill_content {
+        width: auto; } }
+    .skill_content_icon {
+      height: 6rem;
+      width: 6rem; }
+    .skill_content_icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem; }
   .skill_text {
     font-size: 1.8rem;
     font-family: "Noto Sans JP";
@@ -355,45 +351,32 @@ body {
     @media screen and (max-width: 56.25em) {
       .skill_text {
         font-size: 1.5rem; } }
-  .skill_svg {
-    margin-top: 3rem; }
-    @media screen and (max-width: 62.5em) {
-      .skill_svg--1 {
-        height: 40rem;
-        width: 40rem; } }
-    @media screen and (max-width: 56.25em) {
-      .skill_svg--1 {
-        height: 35rem;
-        width: 35rem; } }
-    @media screen and (max-width: 39.5em) {
-      .skill_svg--1 {
-        height: 30rem;
-        width: 30rem; } }
 
-.section_project {
+.section_hackathon {
+  margin-top: 5rem;
   padding: 2rem 7rem 7rem 7rem; }
   @media screen and (max-width: 56.25em) {
-    .section_project {
+    .section_hackathon {
       padding: 2rem 4rem 4rem 4rem; } }
 
 .p_card {
-  height: 40rem;
+  height: 45rem;
   width: 35rem;
-  overflow: hidden; }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.7)); }
 
 .card__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15rem;
+  gap: 20rem;
   justify-content: center; }
 
 .card__bottom {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
   height: 11rem;
   margin-top: 29rem;
   padding: 1.2rem; }
   .card__bottom__heading {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     text-align: center;
     color: white; }
     .card__bottom__heading__light {
@@ -401,12 +384,14 @@ body {
   .card__bottom__container {
     padding: 1rem;
     display: flex;
-    align-items: center; }
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; }
   .card__bottom__text {
     color: white;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
   .card__bottom__btn {
-    font-size: 1.6rem;
+    font-size: 2rem;
     cursor: pointer;
     text-transform: capitalize;
     background-color: rgba(44, 43, 43, 0.705);
@@ -422,7 +407,7 @@ body {
       color: white; }
 
 .card-1 {
-  background-image: url("../img/natrus.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0.9)), url("../img/farmBusiness.png");
   background-size: cover;
   transition: all 0.2s;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
@@ -431,7 +416,7 @@ body {
     box-shadow: 0 1px 3rem rgba(0, 0, 0, 0.1), 0 1px 3rem rgba(0, 0, 0, 0.2); }
 
 .card-2 {
-  background-image: url("../img/mapty.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0.9)), url("../img/labourChowk.png");
   background-size: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: all 0.2s; }
