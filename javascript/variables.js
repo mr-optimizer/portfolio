@@ -1,4 +1,4 @@
-//nightmod
+//night mode
 const nightModeBtn = document.getElementById('navi-toggle');
 const nightLabel = document.getElementById('night_label');
 const mainBody = document.getElementById('body');
@@ -17,9 +17,21 @@ const hireBtn = document.getElementById('hire');
 // eduction section
 const marksIcon = document.querySelectorAll('.marks__icon__circle__inner')
 // Project section
-// const natrousBtn = document.getElementById('natrous');
-// const maptyBtn = document.getElementById('mapty');
-// const bankistBtn = document.getElementById('bankist');
+const cssProjectBtn = document.getElementById('cssProjectButton');
+const jsProjectBtn = document.getElementById('jsProjectButton');
+const reactProjectBtn = document.getElementById('reactProjectButton');
+const backendProjectBtn = document.getElementById('backendProjectButton');
+const cppProjectBtn = document.getElementById('cppProjectButton');
+
+const cssProjects = document.querySelectorAll('.cssProject');
+const jsProjects = document.querySelectorAll('.jsProject');
+const reactProjects = document.querySelectorAll('.reactProject');
+const backendProjects = document.querySelectorAll('.backendProject');
+const cppProjects = document.querySelectorAll('.cppProject');
+
+const projectCards = document.querySelectorAll('.p__card');
+const projectsContainer = document.getElementById('projectContainer')
+
 // Platform Section
 const leetcode_color = document.getElementById('leetcode_path');
 const hacker_rank_btn = document.getElementById('hacker_rank_btn');

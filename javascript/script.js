@@ -62,6 +62,10 @@ const dayTheme = function () {
   marksIcon.forEach((e) => {
     e.style.backgroundColor = "white";
   });
+  projectCards.forEach((e) => {
+    e.style.backgroundColor = "white";
+  })
+  projectsContainer.style.backgroundColor = "#f4f4f4";
 };
 const nightTheme = function () {
   mainBody.style.backgroundImage = "url(img/svg/background.svg)";
@@ -70,10 +74,14 @@ const nightTheme = function () {
   navBar.style.backgroundColor = "#333";
   nightModeIcon.src = "img/png/sun.png";
   leetcode_color.setAttribute("fill", "#fff");
-
+  
   marksIcon.forEach((e) => {
     e.style.backgroundColor = "black";
   });
+  projectCards.forEach((e) => {
+    e.style.backgroundColor = "black";
+  })
+  projectsContainer.style.backgroundColor = "#444";
   // console.log(leetcode_color.fill);
   // nightLabel.style.boxShadow=' 0rem 0rem 4rem 2rem rgba(251,251,0, 0.5)';
   // nightLabel.style.backgroundColor='rgb(251,251,0)';
@@ -125,6 +133,12 @@ hireBtn.addEventListener("click", () => {
   window.open("http://wa.me/918651484067");
 });
 
+resumrBtn.addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1hsrTqeqOnbzgYBYfbH7OcOF1L39oLrII/view?usp=sharing"
+  );
+});
+
 // section about (eduction)
 // section platform
 hacker_rank_btn.addEventListener("click", () => {
@@ -143,19 +157,127 @@ codechef_btn.addEventListener("click", () => {
   window.open("https://www.codechef.com/users/shubham_5802");
 });
 
-//section About
-resumrBtn.addEventListener("click", () => {
-  window.open(
-    "https://drive.google.com/file/d/1Tqy8_t-oGL17QttY0R6R6Pm4ihQM_-2Y/view?usp=sharing"
-  );
+// section project
+
+cssProjectBtn.addEventListener("click", () => {
+  cssProjectBtn.classList.add("project__container__nav__btn--inactive")
+  jsProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  reactProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  backendProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  cppProjectBtn.classList.remove("project__container__nav__btn--inactive")
+
+  jsProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  reactProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  backendProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cppProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cssProjects.forEach((e) => {
+    e.style.removeProperty("display");
+  });
 });
-designerBtn.addEventListener("click", () => {
-  window.open("https://www.careerexplorer.com/careers/web-designer/");
+jsProjectBtn.addEventListener("click", () => {
+  jsProjectBtn.classList.add("project__container__nav__btn--inactive")
+  cssProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  reactProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  backendProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  cppProjectBtn.classList.remove("project__container__nav__btn--inactive")
+
+  jsProjects.forEach((e) => {
+    e.style.removeProperty("display");
+  });
+  reactProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  backendProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cppProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cssProjects.forEach((e) => {
+    e.style.display = "none";
+  });
 });
-developerBtn.addEventListener("click", () => {
-  window.open("https://en.wikipedia.org/wiki/Web_developer");
+reactProjectBtn.addEventListener("click", () => {
+  cssProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  jsProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  reactProjectBtn.classList.add("project__container__nav__btn--inactive")
+  backendProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  cppProjectBtn.classList.remove("project__container__nav__btn--inactive")
+
+  jsProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  reactProjects.forEach((e) => {
+    e.style.removeProperty("display");
+  });
+  backendProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cppProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cssProjects.forEach((e) => {
+    e.style.display = "none";
+  });
 });
-projectManagerBtn.addEventListener("click", () => {
-  window.open("https://en.wikipedia.org/wiki/Project_manager");
+backendProjectBtn.addEventListener("click", () => {
+  cssProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  jsProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  reactProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  backendProjectBtn.classList.add("project__container__nav__btn--inactive")
+  cppProjectBtn.classList.remove("project__container__nav__btn--inactive")
+
+  jsProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  reactProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  backendProjects.forEach((e) => {
+    e.style.removeProperty("display");
+  });
+  cppProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cssProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+});
+cppProjectBtn.addEventListener("click", () => {
+  cssProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  jsProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  reactProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  backendProjectBtn.classList.remove("project__container__nav__btn--inactive")
+  cppProjectBtn.classList.add("project__container__nav__btn--inactive")
+
+  jsProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  reactProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  backendProjects.forEach((e) => {
+    e.style.display = "none";
+  });
+  cppProjects.forEach((e) => {
+    e.style.removeProperty("display");
+  });
+  cssProjects.forEach((e) => {
+    e.style.display = "none";
+  });
 });
 
+
+
+// for counting visitors
+function websiteVisits(response) {
+  document.querySelector("#visits").textContent = response.value;
+}
